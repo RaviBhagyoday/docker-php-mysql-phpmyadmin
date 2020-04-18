@@ -6,14 +6,13 @@ services:
         restart: always
         environment: 
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: test_db
-            MYSQL_USER: ravi
-            MYSQL_PASSWORD: ravi    
+            MYSQL_DATABASE: studinfosystem
+
         ports:
             - "3306:3306"
       
     myphp:
-        image: ravibhagyoday/php-mysql
+        build: .
         ports:
             - "80:80"
 

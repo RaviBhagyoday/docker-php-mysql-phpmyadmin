@@ -1,13 +1,15 @@
 <?php
-$mysqli = new mysqli("mysql:3306","ravi","ravi","test_db");
-
-// Check connection
-if ($mysqli -> connect_errno) {
-  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-  exit();
-
-  
-}
-
-echo "connected";
+include 'connection.php';
+include 'topnav.php';
 ?>
+
+          <!-- Breadcrumbs-->
+           
+          </ol>
+           <div class="Student_logo">
+            <a href="#" class="image full"><img src="image/our-students.jpg" style="width:1000px;" style="background-attachment: fixed;" style="background-size: contain;"  > </a>
+          <!-- Page Content -->
+          <h4></h4>
+          <hr> 
+          <p> <h5>  </h5></p>
+<?php include 'footer.php'; ?>
